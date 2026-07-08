@@ -1,0 +1,102 @@
+INSTAGRAM MESSAGE CONSOLIDATION REPORT
+==================================================
+Consolidation date: 2026-07-08
+Source root: C:\Users\LENOVO\Downloads\instagram-alchemanehairextensions-2026-07-08-k1WIg31R\your_instagram_activity
+Output JSON: C:\Users\LENOVO\Downloads\instagram-alchemanehairextensions-2026-07-08-k1WIg31R\consolidated_messages.json
+
+TOTALS
+------------------------------
+Total messages written: 16513
+  Customer / inbound-ish: 4238
+  Business outbound:      12275
+Files processed: 3421
+Files failed: 0
+Empty/media-only skipped: 2883
+Duplicates flagged: 6
+Anonymous senders assigned: 60
+Date range: 2026-01-08 → 2026-07-08
+
+PLATFORM BREAKDOWN
+------------------------------
+  Instagram DM: 14253
+  Instagram Comment: 2251
+  Instagram Message Request: 9
+
+CATEGORY BREAKDOWN
+------------------------------
+  Business_Reply: 12275
+  Other: 1874
+  Greeting: 649
+  Pricing: 542
+  Inquiry: 535
+  Question: 248
+  Compliment: 203
+  Booking: 166
+  Complaint: 19
+  Feedback: 2
+
+RESPONSE STATUS
+------------------------------
+  replied: 16133
+  not_replied: 380
+
+SENTIMENT
+------------------------------
+  neutral: 14895
+  positive: 1551
+  negative: 60
+  urgent: 7
+
+LANGUAGE
+------------------------------
+  en: 12440
+  hinglish: 3418
+  other: 645
+  ar-en-mixed: 4
+  hi-en-mixed: 3
+  hi: 3
+
+TOP INTENTS (customer)
+------------------------------
+   1874  General message
+    649  Opening greeting / starting conversation
+    542  Asking about pricing/cost
+    535  Product/service inquiry
+    248  Asking a question
+    203  Sharing positive feedback
+    166  Wants to book/schedule
+     19  Reporting a problem/complaint
+      2  Providing feedback
+
+ERRORS
+------------------------------
+  None
+
+WARNINGS
+------------------------------
+  None
+
+DATA QUALITY NOTES
+------------------------------
+1. Source is an Instagram data download (JSON). Platforms beyond Instagram are not present.
+2. Many DM threads start with business private-reply / templates after comment CTAs.
+3. post_comments_1.json mostly contains comments authored by the brand account
+   (e.g. 'Hello Please Check Your DM!'), not third-party comments on your posts.
+4. Sender names and text often had mojibake (e.g. â instead of ’); repaired where possible.
+5. Category, intent, language, and sentiment are heuristic — review Complaints/Pricing for CRM use.
+6. response_status for DMs is inferred from whether a business message appears after a customer message
+   in the same thread; media-only business replies still count.
+7. Duplicate detection is exact match on sender+timestamp+content; near-duplicates are not merged.
+8. Messages with no extractable text (empty content and no media markers) were skipped.
+
+RECOMMENDATIONS
+------------------------------
+1. Filter is_business_outbound=false when building a customer FAQ / reply playbook.
+2. Prioritize response_status in ('not_replied','needs_follow_up') + sentiment urgent/negative.
+3. Treat category=Business_Reply / Instagram Comment brand CTAs as outbound marketing logs, not inquiries.
+4. Manually review top Pricing + Inquiry clusters to build canned WhatsApp/DM replies.
+5. If you also have WhatsApp/Email exports, drop them in a folder and re-run with an extended parser.
+6. For true incoming post comments, export 'comments on your posts' (if available) separately —
+   this dump's comments folder appears to be your outbound comments.
+
+DONE
