@@ -16,7 +16,7 @@ if ($LASTEXITCODE -ne 0) {
 
 # Change ORG below if repo should live under an organization (e.g. ahl-org-name)
 # Leave empty to create under your personal account
-$ORG = ""
+$ORG = "ahl-official"
 
 $repoName = "instagram-insights"
 $fullName = if ($ORG) { "$ORG/$repoName" } else { $repoName }
