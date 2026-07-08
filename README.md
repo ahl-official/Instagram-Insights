@@ -1,6 +1,6 @@
 # Instagram Insights
 
-Consolidated customer and business message intelligence from the **Alchemane Hair Extensions** Instagram data export (Jan–Jul 2026). This repo is organized for the AHL organization with separate brand folders.
+Consolidated customer and business message intelligence from Instagram data exports across AHL brands. This repo is organized with separate brand folders.
 
 ## Repository structure
 
@@ -11,8 +11,25 @@ instagram-insights/
 │   ├── consolidated_messages.json
 │   ├── consolidation_report.txt
 │   └── consolidate_messages.py
-└── ahl/                      # Reserved for AHL-wide or cross-brand insights
+└── AHL/                      # American Hairline | Hair Systems Instagram data
+    ├── README.md
+    ├── consolidated_messages.json
+    ├── consolidation_report.txt
+    └── consolidate_messages.py
 ```
+
+## What’s in `AHL/`
+
+American Hairline Instagram insights (**9,047** messages, Jan–Jul 2026). See [`AHL/README.md`](AHL/README.md) for full stats, schema, and triage guidance.
+
+| File | Purpose |
+|------|---------|
+| `consolidated_messages.json` | Structured DM + comment dataset |
+| `consolidation_report.txt` | Stats, warnings, recommendations |
+| `consolidate_messages.py` | Re-runnable consolidation script |
+| `README.md` | Brand-specific overview and insights |
+
+**Quick stats:** 3,091 inbound · 5,956 outbound · 148 unreplied · 216 needs follow-up. Top customer intents: consultation/callback, location, pricing.
 
 ## What’s in `alchemane/`
 

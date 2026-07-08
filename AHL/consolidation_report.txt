@@ -1,0 +1,62 @@
+INSTAGRAM MESSAGE CONSOLIDATION REPORT
+==========================================
+Generated: 2026-07-08
+Source folder: C:\Users\LENOVO\Downloads\instagram-americanhairline-2026-07-08-Qj97SywS
+
+SUMMARY
+--------------------
+Total messages processed: 9047
+Unique messages: 8705
+Duplicate messages flagged: 342
+Inbound (customer): 3091
+Outbound (business): 5956
+Date range: 2026-01-08 to 2026-07-08
+
+PLATFORM BREAKDOWN
+--------------------
+  Instagram DM: 8383
+  Instagram Comment: 662
+  Instagram DM (Message Request): 2
+
+CATEGORY BREAKDOWN
+--------------------
+  Inquiry: 7090
+  Question: 843
+  Compliment: 840
+  Feedback: 269
+  Complaint: 5
+
+RESPONSE STATUS
+--------------------
+  replied: 8683
+  needs_follow_up: 216
+  not_replied: 148
+
+TOP INTENTS
+--------------------
+  - Requesting consultation, callback, or contact
+  - General customer message requiring review
+  - Business response or outreach to customer
+  - Inquiring about clinic/branch location or availability
+  - Initial greeting or opening message
+  - Asking about pricing for hair systems or services
+  - Directing user to check direct messages
+  - Inquiring about hair system products or customization
+  - Reporting a problem or requesting resolution
+  - Asking about order delivery or shipping status
+
+DATA QUALITY NOTES
+--------------------
+  Messages with unknown date: 0
+  Messages without text (media-only): 852
+  Instagram export uses mis-encoded UTF-8 for emojis; script attempted repair.
+  Comment export only includes comments posted by the business account.
+  Response status for inbound DMs is inferred from thread order in each conversation file.
+
+RECOMMENDATIONS
+--------------------
+1. Review messages flagged as is_duplicate=true before taking action.
+2. Prioritize inbound messages with response_status=not_replied or needs_follow_up.
+3. Validate pricing/location intents manually; keyword intent is approximate.
+4. Request a fuller Instagram export if incoming post comments from customers are needed.
+5. Cross-check urgent/negative sentiment messages for customer service follow-up.
